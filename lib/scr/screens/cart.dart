@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/order.dart';
-import 'package:foodapp/scr/helpers/style.dart';
-import 'package:foodapp/scr/models/cart_item.dart';
-import 'package:foodapp/scr/providers/app.dart';
-import 'package:foodapp/scr/providers/user.dart';
-import 'package:foodapp/scr/widgets/custom_text.dart';
-import 'package:foodapp/scr/widgets/loading.dart';
 
 import 'package:provider/provider.dart';
+import 'package:sumptucious_shoe/scr/helpers/order.dart';
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
+import 'package:sumptucious_shoe/scr/models/cart_item.dart';
+import 'package:sumptucious_shoe/scr/providers/app.dart';
+import 'package:sumptucious_shoe/scr/providers/user.dart';
+import 'package:sumptucious_shoe/scr/widgets/custom_text.dart';
+import 'package:sumptucious_shoe/scr/widgets/loading.dart';
 import 'package:uuid/uuid.dart';
 
 class CartScreen extends StatefulWidget {
@@ -88,7 +88,7 @@ class _CartScreenState extends State<CartScreen> {
                                           fontWeight: FontWeight.bold)),
                                   TextSpan(
                                       text:
-                                          "\$${user.userModel.cart[index].price / 100} \n\n",
+                                          "\#${user.userModel.cart[index].price} \n\n",
                                       style: TextStyle(
                                           color: black,
                                           fontSize: 18,
@@ -153,7 +153,7 @@ class _CartScreenState extends State<CartScreen> {
                           fontSize: 22,
                           fontWeight: FontWeight.w400)),
                   TextSpan(
-                      text: " \$${user.userModel.totalCartPrice / 100}",
+                      text: " \#${user.userModel.totalCartPrice}",
                       style: TextStyle(
                           color: primary,
                           fontSize: 22,
@@ -218,7 +218,7 @@ class _CartScreenState extends State<CartScreen> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'You will be charged \$${user.userModel.totalCartPrice / 100} upon delivery!',
+                                        'You will be charged \#${user.userModel.totalCartPrice} upon delivery!',
                                         textAlign: TextAlign.center,
                                       ),
                                       SizedBox(

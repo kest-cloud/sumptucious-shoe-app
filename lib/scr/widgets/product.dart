@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/screen_navigation.dart';
-import 'package:foodapp/scr/helpers/style.dart';
-import 'package:foodapp/scr/models/products.dart';
-import 'package:foodapp/scr/providers/product.dart';
-import 'package:foodapp/scr/providers/store.dart';
-import 'package:foodapp/scr/screens/store.dart';
 
 import 'package:provider/provider.dart';
+import 'package:sumptucious_shoe/scr/helpers/screen_navigation.dart';
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
+import 'package:sumptucious_shoe/scr/models/products.dart';
+import 'package:sumptucious_shoe/scr/providers/product.dart';
+import 'package:sumptucious_shoe/scr/providers/store.dart';
+import 'package:sumptucious_shoe/scr/screens/store.dart';
 
 import 'custom_text.dart';
 

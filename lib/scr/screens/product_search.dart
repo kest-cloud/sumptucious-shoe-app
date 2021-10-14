@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/screen_navigation.dart';
-import 'package:foodapp/scr/helpers/style.dart';
-import 'package:foodapp/scr/providers/product.dart';
-import 'package:foodapp/scr/screens/details.dart';
-import 'package:foodapp/scr/widgets/custom_text.dart';
-import 'package:foodapp/scr/widgets/product.dart';
 
 import 'package:provider/provider.dart';
+import 'package:sumptucious_shoe/scr/helpers/screen_navigation.dart';
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
+import 'package:sumptucious_shoe/scr/providers/product.dart';
+import 'package:sumptucious_shoe/scr/screens/details.dart';
+import 'package:sumptucious_shoe/scr/widgets/custom_text.dart';
+import 'package:sumptucious_shoe/scr/widgets/product.dart';
 
 class ProductSearchScreen extends StatelessWidget {
   @override

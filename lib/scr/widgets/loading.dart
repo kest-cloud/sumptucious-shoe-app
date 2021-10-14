@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:foodapp/scr/helpers/style.dart';
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
 
 class Loading extends StatelessWidget {
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/style.dart';
+
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
 
 class LikeWidget extends StatelessWidget {
   @override

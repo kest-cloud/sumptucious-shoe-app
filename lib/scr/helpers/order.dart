@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import 'package:foodapp/scr/models/cart_item.dart';
-import 'package:foodapp/scr/models/order.dart';
+import 'package:sumptucious_shoe/scr/models/cart_item.dart';
+import 'package:sumptucious_shoe/scr/models/order.dart';
 
 class OrderServices {
   String collection = "orders";

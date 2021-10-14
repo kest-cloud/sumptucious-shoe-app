@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:foodapp/scr/models/cart_item.dart';
-import 'package:foodapp/scr/models/user.dart';
+import 'package:sumptucious_shoe/scr/models/cart_item.dart';
+import 'package:sumptucious_shoe/scr/models/user.dart';
 
 class UserServices {
   String collection = "users";

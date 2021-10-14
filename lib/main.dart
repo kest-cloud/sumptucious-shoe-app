@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/providers/app.dart';
-import 'package:foodapp/scr/providers/category.dart';
-import 'package:foodapp/scr/providers/product.dart';
-import 'package:foodapp/scr/providers/store.dart';
-import 'package:foodapp/scr/providers/user.dart';
-import 'package:foodapp/scr/screens/home.dart';
-import 'package:foodapp/scr/screens/login.dart';
-import 'package:foodapp/scr/screens/splash.dart';
 
 import 'package:provider/provider.dart';
+import 'package:sumptucious_shoe/scr/providers/app.dart';
+import 'package:sumptucious_shoe/scr/providers/category.dart';
+import 'package:sumptucious_shoe/scr/providers/product.dart';
+import 'package:sumptucious_shoe/scr/providers/store.dart';
+import 'package:sumptucious_shoe/scr/providers/user.dart';
+import 'package:sumptucious_shoe/scr/screens/home.dart';
+import 'package:sumptucious_shoe/scr/screens/login.dart';
+import 'package:sumptucious_shoe/scr/screens/splash.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +22,7 @@ void main() {
       ],
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Food App',
+          title: 'Sumptucious Shoe',
           theme: ThemeData(
             primarySwatch: Colors.red,
           ),

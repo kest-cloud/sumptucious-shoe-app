@@ -1,14 +1,14 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/screen_navigation.dart';
-import 'package:foodapp/scr/models/products.dart';
-import 'package:foodapp/scr/providers/app.dart';
-import 'package:foodapp/scr/providers/user.dart';
-import 'package:foodapp/scr/screens/cart.dart';
-import 'package:foodapp/scr/widgets/custom_text.dart';
-import 'package:foodapp/scr/widgets/loading.dart';
 
 import 'package:provider/provider.dart';
+import 'package:sumptucious_shoe/scr/helpers/screen_navigation.dart';
+import 'package:sumptucious_shoe/scr/models/products.dart';
+import 'package:sumptucious_shoe/scr/providers/app.dart';
+import 'package:sumptucious_shoe/scr/providers/user.dart';
+import 'package:sumptucious_shoe/scr/screens/cart.dart';
+import 'package:sumptucious_shoe/scr/widgets/custom_text.dart';
+import 'package:sumptucious_shoe/scr/widgets/loading.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 import '../helpers/style.dart';

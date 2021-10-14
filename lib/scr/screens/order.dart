@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/style.dart';
-import 'package:foodapp/scr/models/order.dart';
-import 'package:foodapp/scr/providers/app.dart';
-import 'package:foodapp/scr/providers/user.dart';
-import 'package:foodapp/scr/widgets/custom_text.dart';
 
 import 'package:provider/provider.dart';
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
+import 'package:sumptucious_shoe/scr/models/order.dart';
+import 'package:sumptucious_shoe/scr/providers/app.dart';
+import 'package:sumptucious_shoe/scr/providers/user.dart';
+import 'package:sumptucious_shoe/scr/widgets/custom_text.dart';
 
 class OrdersScreen extends StatelessWidget {
   @override

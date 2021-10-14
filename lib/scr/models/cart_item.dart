@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class CartItemModel {
@@ -10,8 +12,6 @@ class CartItemModel {
   static const RESTAURANT_ID = "restaurantId";
   static const TOTAL_RESTAURANT_SALES = "totalRestaurantSale";
 
-
-
   String _id;
   String _name;
   String _image;
@@ -20,8 +20,6 @@ class CartItemModel {
   int _totalRestaurantSale;
   int _quantity;
   int _price;
-
-
 
   //  getters
   String get id => _id;
@@ -40,11 +38,10 @@ class CartItemModel {
 
   int get quantity => _quantity;
 
-
-  CartItemModel.fromMap(Map data){
+  CartItemModel.fromMap(Map data) {
     _id = data[ID];
-    _name =  data[NAME];
-    _image =  data[IMAGE];
+    _name = data[NAME];
+    _image = data[IMAGE];
     _productId = data[PRODUCT_ID];
     _price = data[PRICE];
     _quantity = data[QUANTITY];
@@ -53,13 +50,13 @@ class CartItemModel {
   }
 
   Map toMap() => {
-    ID: _id,
-    IMAGE: _image,
-    NAME: _name,
-    PRODUCT_ID: _productId,
-    QUANTITY: _quantity,
-    PRICE: _price,
-    RESTAURANT_ID: _restaurantId,
-    TOTAL_RESTAURANT_SALES: _totalRestaurantSale
-  };
+        ID: _id,
+        IMAGE: _image,
+        NAME: _name,
+        PRODUCT_ID: _productId,
+        QUANTITY: _quantity,
+        PRICE: _price,
+        RESTAURANT_ID: _restaurantId,
+        TOTAL_RESTAURANT_SALES: _totalRestaurantSale
+      };
 }

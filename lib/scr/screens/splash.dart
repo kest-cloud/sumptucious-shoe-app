@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/style.dart';
-import 'package:foodapp/scr/widgets/custom_text.dart';
-import 'package:foodapp/scr/widgets/loading.dart';
+
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
+import 'package:sumptucious_shoe/scr/widgets/custom_text.dart';
+import 'package:sumptucious_shoe/scr/widgets/loading.dart';
 
 class Splash extends StatefulWidget {
   @override

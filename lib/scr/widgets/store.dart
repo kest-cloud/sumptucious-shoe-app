@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/style.dart';
-import 'package:foodapp/scr/models/store.dart';
-import 'package:foodapp/scr/widgets/small_floating_button.dart';
+
+import 'package:sumptucious_shoe/scr/helpers/style.dart';
+import 'package:sumptucious_shoe/scr/models/store.dart';
+import 'package:sumptucious_shoe/scr/widgets/small_floating_button.dart';
 
 import 'package:transparent_image/transparent_image.dart';
 

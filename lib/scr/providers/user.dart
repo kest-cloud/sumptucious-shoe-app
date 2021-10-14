@@ -3,12 +3,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:foodapp/scr/helpers/order.dart';
-import 'package:foodapp/scr/helpers/user.dart';
-import 'package:foodapp/scr/models/cart_item.dart';
-import 'package:foodapp/scr/models/order.dart';
-import 'package:foodapp/scr/models/products.dart';
-import 'package:foodapp/scr/models/user.dart';
+
+import 'package:sumptucious_shoe/scr/helpers/order.dart';
+import 'package:sumptucious_shoe/scr/helpers/user.dart';
+import 'package:sumptucious_shoe/scr/models/cart_item.dart';
+import 'package:sumptucious_shoe/scr/models/order.dart';
+import 'package:sumptucious_shoe/scr/models/products.dart';
+import 'package:sumptucious_shoe/scr/models/user.dart';
 
 import 'package:uuid/uuid.dart';
 
@@ -19,7 +20,7 @@ class UserProvider with ChangeNotifier {
   FirebaseUser _user;
   Status _status = Status.Uninitialized;
   Firestore _firestore = Firestore.instance;
-  UserServices _userServicse = UserServices();
+  UserServices _userService = UserServices();
   OrderServices _orderServices = OrderServices();
   UserModel _userModel;
 
@@ -95,7 +96,7 @@ class UserProvider with ChangeNotifier {
   }
 
   Future<void> reloadUserModel() async {
-    _userModel = await _userServicse.getUserById(user.uid);
+    _userModel = await _userService.getUserById(user.uid);
     notifyListeners();
   }
 
@@ -105,7 +106,7 @@ class UserProvider with ChangeNotifier {
     } else {
       _user = firebaseUser;
       _status = Status.Authenticated;
-      _userModel = await _userServicse.getUserById(user.uid);
+      _userModel = await _userService.getUserById(user.uid);
     }
     notifyListeners();
   }
@@ -124,7 +125,7 @@ class UserProvider with ChangeNotifier {
         "name": product.name,
         "image": product.image,
         "storeId": product.storeId,
-        "totalRestaurantSale": product.price * quantity,
+        "totalStoreSale": product.price * quantity,
         "productId": product.id,
         "price": product.price,
         "quantity": quantity
@@ -133,7 +134,7 @@ class UserProvider with ChangeNotifier {
       CartItemModel item = CartItemModel.fromMap(cartItem);
 //      if(!itemExists){
       print("CART ITEMS ARE: ${cart.toString()}");
-      _userServicse.addToCart(userId: _user.uid, cartItem: item);
+      _userService.addToCart(userId: _user.uid, cartItem: item);
 //      }
 
       return true;
@@ -152,7 +153,7 @@ class UserProvider with ChangeNotifier {
     print("THE PRODUC IS: ${cartItem.toString()}");
 
     try {
-      _userServicse.removeFromCart(userId: _user.uid, cartItem: cartItem);
+      _userService.removeFromCart(userId: _user.uid, cartItem: cartItem);
       return true;
     } catch (e) {
       print("THE ERROR ${e.toString()}");

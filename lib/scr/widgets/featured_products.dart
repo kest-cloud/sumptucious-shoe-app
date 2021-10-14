@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:foodapp/scr/helpers/screen_navigation.dart';
-import 'package:foodapp/scr/providers/product.dart';
-import 'package:foodapp/scr/providers/user.dart';
-import 'package:foodapp/scr/screens/details.dart';
+
 import 'package:provider/provider.dart';
+import 'package:sumptucious_shoe/scr/helpers/screen_navigation.dart';
+import 'package:sumptucious_shoe/scr/providers/product.dart';
+import 'package:sumptucious_shoe/scr/providers/user.dart';
+import 'package:sumptucious_shoe/scr/screens/details.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 import '../helpers/style.dart';
